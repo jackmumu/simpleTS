@@ -1,14 +1,15 @@
 {
-  "name": "simplets",
-  "version": "1.0.0",
+  "name": "simplets-start",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
-    "simplets": "bin.js"
+    "simplets": "./packages/cli/bin.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd packages && cd cli && ts-node bin.ts"
+    "start": "cd packages && cd cli && ts-node bin.ts",
+    "node": "node ./packages/cli/bin.js"
   },
   "author": "",
   "license": "ISC",

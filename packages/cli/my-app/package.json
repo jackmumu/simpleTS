@@ -1,28 +1,16 @@
 {
-  "name": "cli",
+  "name": "qingmumusimplets",
   "version": "1.0.0",
   "description": "",
-  "main": "bin.ts",
-  "bin": {
-    "simplets": "./bin.js"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node bin.ts",
-    "build": "webpack"
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "commander": "^12.1.0",
-    "node-polyfill-webpack-plugin": "^4.0.0",
-    "ts-loader": "^9.5.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
-  },
   "devDependencies": {
-    "@types/node": "^22.5.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4",
     "webpack": "^5.94.0",

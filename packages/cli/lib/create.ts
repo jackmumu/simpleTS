@@ -10,5 +10,6 @@ export default async function create(projectName: string, options: any) {
     console.error(`目录已经存在: ${targetDir}`);
     await fs.remove(targetDir);
   }
-  await fs.copy("../template", targetDir);
+  const templateDir = path.resolve(__dirname, "../../template");
+  await fs.copy(templateDir, targetDir);
 }
