@@ -6,6 +6,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "noImplicitThis": false,
     "paths": {
       "@src/*": ["src/*"]
     }

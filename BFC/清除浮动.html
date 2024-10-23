@@ -1,0 +1,25 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC 示例</title>
+    <style>
+        .container {
+            overflow: hidden; /* 创建 BFC */
+        }
+        .float {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="float">浮动元素</div>
+        <div class="float">浮动元素</div>
+    </div>
+    <div>aaa</div>
+</body>

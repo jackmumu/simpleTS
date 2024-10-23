@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双飞翼布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 50px;
+            background-color: lightgray;
+        }
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .main {
+            float: left;
+            width: 100%;
+            background-color: white;
+        }
+        .sidebar-left {
+            float: left;
+            width: 200px;
+            margin-left: -100%;
+            background-color: blanchedalmond;
+        }
+        .sidebar-right {
+            float: left;
+            width: 200px;
+            margin-left: -200px;
+            background-color: aquamarine;
+        }
+        .main-inner {
+            margin: 0 200px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="container">
+        <div class="main">
+            <div class="main-inner">Main Content</div>
+        </div>
+        <div class="sidebar-left">Left Sidebar</div>
+        <div class="sidebar-right">Right Sidebar</div>
+    </div>
+</body>
+</html>

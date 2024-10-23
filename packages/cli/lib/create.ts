@@ -12,4 +12,5 @@ export default async function create(projectName: string, options: any) {
   }
   const templateDir = path.resolve(__dirname, "../../template");
   await fs.copy(templateDir, targetDir);
+  
 }

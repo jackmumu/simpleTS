@@ -8,4 +8,11 @@ describe("两数相加", () => {
     const arr = flatNodes(t);
     expect(arr).toEqual([3, 5, 7, 9]);
   });
+  it("2", () => {
+    const a = makeNodes([4, 6, 3, 4]);
+    const b = makeNodes([5, 6, 4, 5]);
+    const t = twoSum(a, b);
+    const arr = flatNodes(t);
+    expect(arr).toEqual([9, 2, 8, 9]);
+  });
 });

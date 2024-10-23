@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #app {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header,
+        .footer {
+            height: 100px;
+            background-color: red;
+        }
+
+        .content {
+            height: calc(100% - 200px);
+            overflow: hidden;
+        }
+
+        .content-item {
+            height: 100%;
+        }
+
+        .content-item__center {
+            margin: 0px 100px;
+            background-color: rebeccapurple;
+        }
+
+        .content-item__right {
+            width: 100px;
+            float: right;
+            background-color: aquamarine;
+        }
+
+        .content-item__left {
+            float: left;
+            width: 100px;
+            border-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="header"></div>
+        <div class="content">
+            <div class="content-item content-item__left"></div>
+            <div class="content-item content-item__center"></div>
+            <div class="content-item content-item__right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

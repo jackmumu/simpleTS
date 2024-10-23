@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC 示例</title>
+    <style>
+        .container {
+            overflow: hidden; /* 创建 BFC */
+        }
+        .box {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">盒子 1</div>
+        <div class="box">盒子 2</div>
+    </div>
+</body>
+</html>

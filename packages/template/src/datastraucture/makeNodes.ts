@@ -18,7 +18,7 @@ function makeNodes(arr: any[]) {
   return res[0];
 }
 function flatNodes(node: linkedList) {
-  const arr = [];
+  const arr: Array<any> = [];
   while (node) {
     arr.push(node.val);
     node = node.next;
