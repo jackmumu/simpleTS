@@ -27,3 +27,12 @@ jobs:
         cd packages/template
         npm install
         npx webpack
+    - name: Commit and push build
+      run: |
+        git config --global user.name 'jackmumu'
+        git config --global user.email '1459307172@qq.com'
+        git add .
+        git commit -m 'Build and deploy'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
